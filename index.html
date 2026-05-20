@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>XXX Kazino</title>
+
+  <!-- SEO -->
+
+  <meta name="description"
+  content="XXX Kazino — juftliklar uchun romantik va maxfiy o'yinlar platformasi. Royal Roulette va Slot Machine orqali unutilmas romantik tajriba.">
+
+  <meta name="keywords"
+  content="xxx kazino, royal roulette, slot machine, romantik o'yinlar, couple games, kazino, private games">
+
+  <meta name="author"
+  content="Yusufaliyev1225">
+
+  <meta property="og:title"
+  content="XXX Kazino">
+
+  <meta property="og:description"
+  content="Juftliklar uchun maxfiy romantik o'yinlar platformasi">
+
+  <meta property="og:type"
+  content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
+      min-height:100vh;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      width:700px;
+      height:700px;
+      background:radial-gradient(circle,#ff006a55 0%,transparent 70%);
+      top:-250px;
+      left:-250px;
+      z-index:-1;
+      animation:floatGlow 8s ease-in-out infinite;
+    }
+
+    body::after{
+      content:'';
+      position:fixed;
+      width:700px;
+      height:700px;
+      background:radial-gradient(circle,#8b5cf655 0%,transparent 70%);
+      bottom:-250px;
+      right:-250px;
+      z-index:-1;
+      animation:floatGlow 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatGlow{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-25px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    /* HEADER */
+
+    header{
+      width:100%;
+      padding:24px 8%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+      backdrop-filter:blur(16px);
+      background:rgba(5,8,22,0.45);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+
+    /* LANGUAGE */
+
+    .language-box{
+      position:absolute;
+      top:18px;
+      left:18px;
+      z-index:1200;
+    }
+
+    .language-select{
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.08);
+      color:#ffffff;
+      padding:9px 14px;
+      border-radius:14px;
+      outline:none;
+      backdrop-filter:blur(12px);
+      cursor:pointer;
+      font-size:13px;
+      transition:0.3s;
+      box-shadow:0 0 18px rgba(255,0,128,0.08);
+    }
+
+    .language-select:hover{
+      background:rgba(255,255,255,0.09);
+      border-color:#ff4fa3;
+    }
+
+    .language-select option{
+      background:#111827;
+      color:white;
+    }
+
+    /* LOGO */
+
+    .logo-area{
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+    }
+
+    .logo{
+      font-size:36px;
+      font-weight:800;
+      background:linear-gradient(90deg,#ff4fa3,#9b5cff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      letter-spacing:1px;
+    }
+
+    .subtitle{
+      font-size:12px;
+      color:#f9a8d4;
+      margin-top:2px;
+      letter-spacing:1px;
+    }
+
+    /* STATUS */
+
+    .status{
+      position:absolute;
+      right:24px;
+      top:16px;
+      padding:10px 18px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      text-align:center;
+      box-shadow:0 0 18px rgba(255,0,128,0.08);
+    }
+
+    .status-main{
+      font-size:14px;
+      font-weight:700;
+      color:white;
+    }
+
+    .status-sub{
+      font-size:11px;
+      color:#f9a8d4;
+      margin-top:2px;
+      letter-spacing:0.5px;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      padding:180px 8% 100px;
+      text-align:center;
+    }
+
+    .tag{
+      padding:12px 22px;
+      border-radius:30px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      color:#ffd0e4;
+      margin-bottom:28px;
+      backdrop-filter:blur(12px);
+      box-shadow:0 0 25px rgba(255,0,128,0.15);
+    }
+
+    .hero h1{
+      font-size:82px;
+      line-height:1.05;
+      margin-bottom:28px;
+      font-weight:800;
+    }
+
+    .gradient{
+      background:linear-gradient(90deg,#ff4fa3,#9b5cff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      color:#f3f4f6;
+      font-size:19px;
+      line-height:1.9;
+      max-width:920px;
+      margin-bottom:65px;
+    }
+
+    /* GAMES */
+
+    .games{
+      width:100%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+      gap:38px;
+    }
+
+    .game-card{
+      position:relative;
+      overflow:hidden;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:34px;
+      padding:42px;
+      text-decoration:none;
+      color:white;
+      transition:0.45s;
+      backdrop-filter:blur(16px);
+      min-height:380px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .game-card:hover{
+      transform:translateY(-12px) scale(1.02);
+      border-color:#ff4fa3;
+      box-shadow:0 0 45px rgba(255,0,128,0.28);
+    }
+
+    .game-card::before{
+      content:'';
+      position:absolute;
+      width:260px;
+      height:260px;
+      background:radial-gradient(circle,#ff008855 0%,transparent 70%);
+      top:-110px;
+      right:-110px;
+    }
+
+    .icon{
+      width:95px;
+      height:95px;
+      border-radius:26px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:42px;
+      background:linear-gradient(135deg,#ff4fa3,#7c3aed);
+      margin-bottom:34px;
+      box-shadow:0 0 35px rgba(255,0,128,0.35);
+      position:relative;
+      z-index:2;
+    }
+
+    .game-card h2{
+      font-size:40px;
+      margin-bottom:18px;
+      position:relative;
+      z-index:2;
+    }
+
+    .game-card p{
+      color:#f3f4f6;
+      line-height:1.9;
+      margin-bottom:40px;
+      position:relative;
+      z-index:2;
+      font-size:16px;
+    }
+
+    .play-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:18px;
+      border-radius:20px;
+      background:linear-gradient(90deg,#ff4fa3,#7c3aed);
+      color:white;
+      font-weight:700;
+      text-decoration:none;
+      transition:0.35s;
+      position:relative;
+      z-index:2;
+      box-shadow:0 0 28px rgba(255,0,128,0.35);
+      letter-spacing:1px;
+    }
+
+    .play-btn:hover{
+      transform:scale(1.02);
+      box-shadow:0 0 40px rgba(255,0,128,0.45);
+    }
+
+    /* FOOTER */
+
+    footer{
+      padding:42px 8%;
+      text-align:center;
+      color:#9ca3af;
+      border-top:1px solid rgba(255,255,255,0.06);
+      font-size:15px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:58px;
+      }
+
+      .status{
+        display:none;
+      }
+
+    }
+
+    @media(max-width:650px){
+
+      .hero{
+        padding-top:170px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .game-card{
+        padding:30px;
+      }
+
+      .game-card h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <!-- LANGUAGE -->
+
+  <div class="language-box">
+
+    <select class="language-select" onchange="changeLanguage(this.value)">
+      <option value="uz">UZ</option>
+      <option value="en">EN</option>
+      <option value="ru">RU</option>
+    </select>
+
+  </div>
+
+  <!-- LOGO -->
+
+  <div class="logo-area">
+
+    <div class="logo">
+      XXX Kazino
+    </div>
+
+    <div class="subtitle" id="subtitle">
+      Tun davomida ehtirosni uyg'otadigan maxfiy o'yinlar
+    </div>
+
+  </div>
+
+  <!-- STATUS -->
+
+  <div class="status">
+
+    <div class="status-main">
+      Juftingiz
+    </div>
+
+    <div class="status-sub">
+      bilan kiring
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="tag" id="tag">
+    Juftliklar uchun maxfiy kazino
+  </div>
+
+  <h1 id="title">
+    O'zingizning <br>
+    <span class="gradient">Ehtirosli O'yiningizni</span> Tanlang
+  </h1>
+
+  <p id="description">
+    Bu yerda har bir aylanish va har bir tugma bosilishi
+    juftlik orasidagi yaqinlikni yanada kuchaytiradi.
+    Romantik muhit, ehtirosli topshiriqlar va
+    hayajonli o'yinlar orqali tuningizni unutilmas
+    sarguzashtga aylantiring.
+  </p>
+
+  <!-- GAMES -->
+
+  <div class="games">
+
+    <!-- ROYAL ROULETTE -->
+
+    <a href="https://yusufaliyev.github.io/Yusufaliyev/Yusufaliyev1225.html"
+       class="game-card"
+       target="_blank">
+
+      <div>
+
+        <div class="icon">
+          🎡
+        </div>
+
+        <h2 id="roulette-title">
+          Royal Roulette
+        </h2>
+
+        <p id="roulette-text">
+          Ruletkani aylantiring va romantik topshiriqlar,
+          ehtirosli challenge'lar hamda hayajonli lahzalarni oching.
+          Har bir aylanish juftlik orasidagi yaqinlikni
+          yanada kuchaytiradi.
+        </p>
+
+      </div>
+
+      <div class="play-btn" id="roulette-btn">
+        O'YINGA KIRISH
+      </div>
+
+    </a>
+
+    <!-- SLOT MACHINE -->
+
+    <a href="https://yusufaliyev.github.io/Slot-Machine/SlotMachinee.html"
+       class="game-card"
+       target="_blank">
+
+      <div>
+
+        <div class="icon">
+          🎰
+        </div>
+
+        <h2 id="slot-title">
+          Slot Machine
+        </h2>
+
+        <p id="slot-text">
+          Slotni aylantirib romantik syurprizlar,
+          jasur vazifalar va juftlik uchun
+          qiziqarli sarguzashtlarni oching.
+          Har bir kombinatsiya yangi his-tuyg'ular olib keladi.
+        </p>
+
+      </div>
+
+      <div class="play-btn" id="slot-btn">
+        O'YINGA KIRISH
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+  © 2026 Yusufaliyev1225 - Maxfiy Romantik O'yinlar
+</footer>
+
+<!-- LANGUAGE SCRIPT -->
+
+<script>
+
+function changeLanguage(lang){
+
+  if(lang === "en"){
+
+    document.getElementById("subtitle").innerText =
+      "Private games designed for unforgettable nights";
+
+    document.getElementById("tag").innerText =
+      "Private casino for couples";
+
+    document.getElementById("title").innerHTML =
+      `Choose Your <br><span class="gradient">Passionate Game</span>`;
+
+    document.getElementById("description").innerText =
+      "Every spin and every click is designed to bring couples closer together through romance, excitement and unforgettable private experiences.";
+
+    document.getElementById("roulette-text").innerText =
+      "Spin the roulette and unlock romantic challenges, exciting couple experiences and unforgettable moments.";
+
+    document.getElementById("slot-text").innerText =
+      "Pull the slot machine and reveal playful surprises, daring couple tasks and exciting romantic adventures.";
+
+    document.getElementById("roulette-btn").innerText =
+      "ENTER GAME";
+
+    document.getElementById("slot-btn").innerText =
+      "ENTER GAME";
+
+    document.getElementById("footer").innerText =
+      "© 2026 Yusufaliyev1225 - Private Romantic Games";
+
+  }
+
+  if(lang === "ru"){
+
+    document.getElementById("subtitle").innerText =
+      "Тайные игры для незабываемых ночей";
+
+    document.getElementById("tag").innerText =
+      "Приватное казино для пар";
+
+    document.getElementById("title").innerHTML =
+      `Выберите свою <br><span class="gradient">Страстную Игру</span>`;
+
+    document.getElementById("description").innerText =
+      "Каждое вращение и каждое нажатие создают романтическую атмосферу и незабываемые эмоции для двоих.";
+
+    document.getElementById("roulette-text").innerText =
+      "Крутите рулетку и открывайте романтические задания и увлекательные игры для пар.";
+
+    document.getElementById("slot-text").innerText =
+      "Испытайте слот-машину с романтическими сюрпризами и веселыми заданиями.";
+
+    document.getElementById("roulette-btn").innerText =
+      "ВОЙТИ В ИГРУ";
+
+    document.getElementById("slot-btn").innerText =
+      "ВОЙТИ В ИГРУ";
+
+    document.getElementById("footer").innerText =
+      "© 2026 Yusufaliyev1225 - Приватные романтические игры";
+
+  }
+
+  if(lang === "uz"){
+
+    document.getElementById("subtitle").innerText =
+      "Tun davomida ehtirosni uyg'otadigan maxfiy o'yinlar";
+
+    document.getElementById("tag").innerText =
+      "Juftliklar uchun maxfiy kazino";
+
+    document.getElementById("title").innerHTML =
+      `O'zingizning <br><span class="gradient">Ehtirosli O'yiningizni</span> Tanlang`;
+
+    document.getElementById("description").innerText =
+      "Bu yerda har bir aylanish va har bir tugma bosilishi juftlik orasidagi yaqinlikni yanada kuchaytiradi.";
+
+    document.getElementById("roulette-text").innerText =
+      "Ruletkani aylantiring va romantik topshiriqlar, ehtirosli challenge'lar hamda hayajonli lahzalarni oching.";
+
+    document.getElementById("slot-text").innerText =
+      "Slotni aylantirib romantik syurprizlar, jasur vazifalar va juftlik uchun qiziqarli sarguzashtlarni oching.";
+
+    document.getElementById("roulette-btn").innerText =
+      "O'YINGA KIRISH";
+
+    document.getElementById("slot-btn").innerText =
+      "O'YINGA KIRISH";
+
+    document.getElementById("footer").innerText =
+      "© 2026 Yusufaliyev1225 - Maxfiy Romantik O'yinlar";
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
